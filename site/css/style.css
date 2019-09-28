@@ -1,0 +1,116 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header nav h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+
+  flex-wrap: wrap;
+}
+.div1 {
+  position: relative;
+  display: flex;
+  width: 32%;
+  background: #ccc;
+
+  margin: 2px;
+  border: 3px solid #222;
+}
+.div1 .chicken {
+  border: 2px solid;
+  position: absolute;
+  border-right: 0;
+  right: 0;
+  font-size: 10px;
+  text-align: center;
+  border-top: 0;
+  background: rgb(207, 120, 109);
+  width: 100px;
+}
+.div1 p {
+  text-align: left;
+  padding: 10px;
+  margin-top: 35px;
+}
+.div2 {
+  position: relative;
+  display: flex;
+  background: #ccc;
+  width: 32%;
+  margin: 2px;
+  border: 3px solid #222;
+}
+.div2 .beef {
+  border: 2px solid;
+  position: absolute;
+  border-right: 0;
+  right: 0;
+  font-size: 10px;
+  text-align: center;
+  border-top: 0;
+  background: rgb(192, 62, 44);
+  width: 100px;
+}
+.div2 p {
+  text-align: left;
+  padding: 10px;
+  margin-top: 35px;
+}
+
+.div3 {
+  position: relative;
+  display: flex;
+  background: #ccc;
+  margin: 2px;
+  width: 32%;
+  border: 3px solid #222;
+}
+.div3 .sushi {
+  border: 2px solid;
+  position: absolute;
+  border-right: 0;
+  right: 0;
+  font-size: 10px;
+  text-align: center;
+  border-top: 0;
+  background: rgba(230, 214, 78, 0.795);
+  width: 100px;
+}
+.div3 p {
+  text-align: left;
+  padding: 10px;
+  margin-top: 35px;
+}
+
+@media (max-width: 768px) {
+  .div1 {
+    width: 49%;
+  }
+  .div2 {
+    width: 49%;
+  }
+  .div3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .div1 {
+    width: 100%;
+  }
+  .div2 {
+    width: 100%;
+  }
+  .div3 {
+    width: 100%;
+  }
+}
